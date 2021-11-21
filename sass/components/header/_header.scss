@@ -7,8 +7,9 @@
   background-color: $primary-white-color;
   border-bottom: 1px solid $border-header-color;
   z-index: 99;
-
-  &__container {
+}
+.header__container {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
