@@ -1,0 +1,31 @@
+.hero,
+.footer {
+  background-color: $bg-one;
+}
+.hero {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bg/bg-img-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero__title {
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  color: $primary-white-color;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+.btn {
+  padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  background-color: $button-bg-color;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.btn__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn__item {
+  margin-right: 8px;
+}
+.btn__item:nth-last-child(-n + 1) {
+  margin: 0;
+}

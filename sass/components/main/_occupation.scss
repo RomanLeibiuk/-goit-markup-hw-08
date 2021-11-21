@@ -1,0 +1,52 @@
+.occupation__title,
+.crew__title,
+.clients-logotype__title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+.occupation {
+  padding-top: 0;
+}
+.occupation__list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.occupation__image {
+  display: block;
+}
+.occupation__item {
+  margin-right: 30px;
+}
+.occupation__item:nth-last-child(-n + 1) {
+  margin: 0;
+}
+.occupation__image {
+  position: relative;
+}
+.occupation__text {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  width: 370px;
+  max-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
