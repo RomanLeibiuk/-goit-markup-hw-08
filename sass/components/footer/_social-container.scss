@@ -1,3 +1,17 @@
+.social__container {
+  margin-left: 70px;
+}
+.social__container_text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .social-footer__list {
   display: flex;
 }

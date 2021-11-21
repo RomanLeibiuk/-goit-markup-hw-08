@@ -13,24 +13,24 @@
 }
 .occupation {
   padding-top: 0;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__image {
+    display: block;
+    position: relative;
+  }
 }
-.occupation__list {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-.occupation__image {
-  display: block;
-}
+
 .occupation__item {
   margin-right: 30px;
 }
 .occupation__item:nth-last-child(-n + 1) {
   margin: 0;
 }
-.occupation__image {
-  position: relative;
-}
+
 .occupation__text {
   position: absolute;
   margin: 0;

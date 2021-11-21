@@ -6,9 +6,10 @@
   width: 100%;
   background-color: $primary-white-color;
   border-bottom: 1px solid $border-header-color;
-  z-index: 3;
-}
-.header__container {
-  display: flex;
-  align-items: center;
+  z-index: 99;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 }
