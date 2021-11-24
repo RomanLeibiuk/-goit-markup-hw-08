@@ -79,10 +79,12 @@ body {
 
 @media screen and (max-width: 480px) {
   .logo {
+    display: block;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    padding: 16px 0px;
   }
 }
 
@@ -620,8 +622,25 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 480px) {
+  .crew__image {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+}
+
 .crew__item {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .crew__item {
+    margin-bottom: 30px;
+  }
 }
 
 .crew__item:nth-last-child(-n + 1) {
@@ -632,7 +651,13 @@ body {
   background-color: #f5f4fa;
 }
 
+.crew__members_name {
+  padding-bottom: 30px;
+}
+
 .crew__members_title {
+  margin: 0;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -642,6 +667,7 @@ body {
 }
 
 .crew__members_text {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -651,7 +677,31 @@ body {
   margin-bottom: 16px;
 }
 
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
   border: 1px transparent;
   border-radius: 50%;
   fill: #afb1b8;
@@ -670,7 +720,25 @@ body {
   background-color: #2196f3;
 }
 
+.clients-logotype__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .clients-logotype__list {
+    margin: -15px;
+  }
+}
+
 .clients-logotype__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -687,6 +755,26 @@ body {
 .clients-logotype__link:hover, .clients-logotype__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .clients-logotype__link {
+    width: 210px;
+    margin: 15px;
+    -ms-flex-preferred-size: calc(100%-2 * 30px)/2;
+        flex-basis: calc(100%-2 * 30px)/2;
+  }
+}
+
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
 .address__link {
@@ -709,18 +797,62 @@ body {
   color: #ffffff;
 }
 
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .address__item {
+    margin-bottom: 8px;
+  }
+}
+
+.address__item:nth-last-child(-n + 1) {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .social__container {
+    margin-top: 60px;
+  }
+}
+
 .social__container_text {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--primary-white-color);
+  color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
 }
 
+.social-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social-footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
   fill: #ffffff;
   border: 0px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -729,9 +861,19 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-footer__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-footer__link:hover,
 .social-footer__link:focus {
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__form {
+    padding-top: 60px;
+  }
 }
 
 .footer__label {
@@ -740,10 +882,19 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__label {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__input {
+  padding: 15px 16px;
+  height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -752,6 +903,14 @@ body {
   outline: none;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .footer__input {
+    min-width: 450px;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__input:focus {
@@ -805,6 +964,17 @@ body {
 }
 
 .footer__submit_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
   text-align: center;
   background: #2196f3;
   color: #ffffff;
@@ -817,9 +987,20 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 480px) {
+  .footer__submit_button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer__submit_button:hover,
 .footer__submit_button:focus {
   background-color: #188ce8;
+}
+
+.footer__icon {
+  margin-left: 10px;
 }
 
 .btn {
