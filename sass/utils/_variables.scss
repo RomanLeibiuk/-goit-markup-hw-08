@@ -1,6 +1,6 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -15,16 +15,17 @@
   text-decoration: none;
 }
 .container {
-  @media screen and(max-width:480px) {
-    width: 480px;
-  }
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }

@@ -1,11 +1,10 @@
 .footer__container {
   // display: flex;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
   // align-items: baseline;
-  @media screen and(max-width:480px) {
+  @media screen and(max-width:479.999px) {
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -28,14 +27,14 @@
   color: $primary-white-color;
 }
 .footer__logo {
-  display: block;
-  margin-bottom: 20px;
+  // display: block;
+  // margin-bottom: 20px;
 }
 
 .address__item {
   // display: block;
   // margin-bottom: 9px;
-  @media screen and(max-width:480px) {
+  @media screen and(max-width:479.999px) {
     margin-bottom: 8px;
   }
 }

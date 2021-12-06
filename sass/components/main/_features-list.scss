@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479.999px) {
     text-align: center;
   }
 }
@@ -21,7 +21,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @media screen and(max-width:480px) {
+  @media screen and(max-width: 479.999px) {
     width: 100%;
   }
 }
@@ -41,12 +41,12 @@
   border-radius: 4px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479.999px) {
     width: 450px;
     padding: 25px 190px 25px 190px;
   }
 }
-.features__icon {
-  width: 70px;
-  height: 70px;
-}
+// .features__icon {
+//   width: 70px;
+//   height: 70px;
+// }

@@ -14,8 +14,8 @@
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 200px 0px;
-  @media screen and (max-width: 480px) {
+  // padding: 200px 0px;
+  @media screen and (max-width: 479.999px) {
     min-height: 400px;
     max-width: 480px;
     padding: 118px 0px;
@@ -24,8 +24,8 @@
 
 .hero__title {
   // width: 696px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  // margin: 0 auto;
+  // margin-bottom: 30px;
 
   color: $primary-white-color;
   font-family: Roboto;
