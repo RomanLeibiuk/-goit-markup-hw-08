@@ -724,7 +724,7 @@ body {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 767.999px) {
+@media screen and (max-width: 1199px) {
   .clients-logotype__list {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -736,16 +736,19 @@ body {
 }
 
 .clients-logotype__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 16px 52px;
   height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -756,13 +759,16 @@ body {
 }
 
 @media screen and (max-width: 767.999px) {
-  .clients-logotype__link {
-    width: 210px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .clients-logotype__item {
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-    width: calc(100% -4 * 15px)/2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-logotype__item {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
   }
 }
 
@@ -872,7 +878,7 @@ body {
 @media screen and (max-width: 479.999px) {
   .footer__input {
     padding: 15px 16px;
-    min-width: 450px;
+    width: 450px;
     display: block;
     margin-bottom: 20px;
   }
