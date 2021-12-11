@@ -19,17 +19,25 @@
         <!--======================== Шапка сайта================================================-->
     <header class="header">
         <!--======================== Разметка навигации================================================-->
-        <div class="header__container container">     
+        <div class="header__container container">   
+            <button type="button" class="site-nav__menu is_open" data-menu-button>
+                <svg width=" 40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use use class="site-nav__icon_menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="site-nav__icon_cross" href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
         <nav class="site-nav">
             <a href="./" class="header__logo logo">Web<span class="header__logo--accent">Studio</span>
             </a>
-            <ul class="site-nav__list list">
+                  
+          
+            <!-- <ul class="site-nav__list list">
                 <li class="site-nav__item"> <a href="./index.html" class="site-nav__link site-nav__link--current link">Студия</a></li>
                 <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link link">Портфолио</a></li>
                 <li class="site-nav__item"> <a href="" class="site-nav__link link">Контакты</a></li>
-            </ul>
+            </ul> -->
         </nav>
-            <ul class="contacts__list list">
+            <!-- <ul class="contacts__list list">
                 <li class="contacts__item">
                     
                         <a href="mailto:info@devstudio.com" class="contacts__link link">
@@ -52,7 +60,8 @@
                         +380404040032
                     </a>
                 </li>
-            </ul>
+            </ul> -->
+           
          </div>
         
     </header>
@@ -472,5 +481,6 @@
     </footer>
             
     <script src="./js/modal.js"></script>
+    <script src="./js/header-btn.js"></script>
     </body>
 </html>

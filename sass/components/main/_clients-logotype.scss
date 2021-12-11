@@ -6,19 +6,18 @@
     display: inline-flex;
     flex-wrap: wrap;
     margin: -15px;
+
     // ширина= калк (100% - клво маржинов * на ширину маржина) /на клво элеменетов)
   }
 }
 .clients-logotype__link {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  padding: 16px 52px;
+  align-items: center;
   // width: 170px;
   height: 92px;
   fill: $logo-color;
-  border: 1px solid $logo-color;
-  border-radius: 4px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -29,6 +28,9 @@
   }
 }
 .clients-logotype__item {
+  border: 1px solid $logo-color;
+  border-radius: 4px;
+
   @media screen and (max-width: 767.999px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;

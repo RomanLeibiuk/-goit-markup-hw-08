@@ -58,11 +58,6 @@ body {
   overflow: hidden;
 }
 
-.header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
-}
-
 .logo {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -88,6 +83,29 @@ body {
 
 .footer__logo--accent {
   color: #ffffff;
+}
+
+.site-nav__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  float: right;
+}
+
+.site-nav__menu .site-nav__icon_cross {
+  display: none;
+}
+
+.site-nav__menu.is_open .site-nav__icon_cross {
+  display: block;
+}
+
+.site-nav__menu.is_open .site-nav__icon_menu {
+  display: none;
 }
 
 .site-nav__link {
@@ -736,19 +754,17 @@ body {
 }
 
 .clients-logotype__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 16px 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 92px;
   fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -756,6 +772,11 @@ body {
 .clients-logotype__link:hover, .clients-logotype__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
+}
+
+.clients-logotype__item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 767.999px) {

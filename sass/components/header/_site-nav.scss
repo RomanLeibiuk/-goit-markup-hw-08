@@ -19,6 +19,24 @@
 //   }
 // }
 
+.site-nav__menu {
+  display: inline-flex;
+  margin: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  float: right;
+}
+.site-nav__menu .site-nav__icon_cross {
+  display: none;
+}
+.site-nav__menu.is_open .site-nav__icon_cross {
+  display: block;
+}
+.site-nav__menu.is_open .site-nav__icon_menu {
+  display: none;
+}
+
 .site-nav__link {
   color: $title-text-color;
   font-weight: 500;
