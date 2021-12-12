@@ -27,6 +27,7 @@ body {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -58,6 +59,125 @@ body {
   overflow: hidden;
 }
 
+.menu__container {
+  min-height: 60px;
+  min-width: 320px;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767.999px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu__link:focus, .menu__link:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu__box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 1000;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu__box.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu__box .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .menu__link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .logo {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -83,44 +203,6 @@ body {
 
 .footer__logo--accent {
   color: #ffffff;
-}
-
-.site-nav__menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  float: right;
-}
-
-.site-nav__menu .site-nav__icon_cross {
-  display: none;
-}
-
-.site-nav__menu.is_open .site-nav__icon_cross {
-  display: block;
-}
-
-.site-nav__menu.is_open .site-nav__icon_menu {
-  display: none;
-}
-
-.site-nav__link {
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: #2196f3;
 }
 
 .contacts__link {
@@ -846,7 +928,29 @@ body {
   color: #ffffff;
 }
 
+.social-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .social-footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
   height: 44px;
   fill: #ffffff;
   border: 0px solid rgba(255, 255, 255, 0.1);
@@ -854,6 +958,10 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-footer__link:hover,
