@@ -28,7 +28,7 @@
 
 .features__item {
   // width: 270px;
-  // margin-right: 30px;
+  margin-right: 30px;
 }
 .features__item:nth-last-child(-n + 1) {
   // margin: 0;
@@ -39,14 +39,13 @@
   background-color: $button-bg-color;
   border-color: $button-bg-color;
   border-radius: 4px;
-  margin-bottom: 30px;
 
   @media screen and (max-width: 479.999px) {
     width: 450px;
     padding: 25px 190px 25px 190px;
   }
 }
-// .features__icon {
-//   width: 70px;
-//   height: 70px;
-// }
+.features__icon {
+  width: 70px;
+  height: 70px;
+}

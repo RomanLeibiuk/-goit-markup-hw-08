@@ -16,6 +16,7 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-white-color;
   @media screen and(max-width:479.999px) {
+    width: 450px;
     margin-bottom: 30px;
   }
 }
@@ -55,18 +56,18 @@
   text-align: center;
   margin-bottom: 16px;
 }
-// .social__list {
-//   display: flex;
-//   justify-content: center;
-// }
+.social__list {
+  display: flex;
+  justify-content: center;
+}
 
 .social__item:not(:last-child) {
   margin-right: 10px;
 }
 .social__link {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 44px;
   height: 44px;
