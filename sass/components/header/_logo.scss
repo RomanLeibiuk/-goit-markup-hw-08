@@ -10,16 +10,14 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.16;
-    padding: 16px 0px;
   }
+}
+.header__logo {
+  padding: 16px 0px;
 }
 .header__logo--accent {
   color: $title-text-color;
 }
 .footer__logo--accent {
   color: $primary-white-color;
-}
-.footer__logo {
-  // display: block;
-  // margin-bottom: 20px;
 }

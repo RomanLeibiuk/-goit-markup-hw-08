@@ -1,7 +1,10 @@
-// .features__list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.features__list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 .features__title {
   font-weight: 700;
   font-size: 14px;
@@ -15,34 +18,48 @@
 }
 
 .features__text {
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: $primary-text-color;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @media screen and(max-width: 479.999px) {
+  @media screen and (max-width: 479.999px) {
     width: 100%;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199.999px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
   }
 }
 
 .features__item {
-  // width: 270px;
-  margin-right: 30px;
-}
-.features__item:nth-last-child(-n + 1) {
-  // margin: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+    width: calc(100% - 4 * 15px) / 2;
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 8 * 15px) / 4;
+    margin: 15px;
+  }
 }
 .features__icon_box {
-  // width: 270px;
+  @include centeredflex;
   height: 120px;
   background-color: $button-bg-color;
   border-color: $button-bg-color;
   border-radius: 4px;
 
-  @media screen and (max-width: 479.999px) {
+  @media screen and (max-width: 767.999px) {
     width: 450px;
-    padding: 25px 190px 25px 190px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 .features__icon {
