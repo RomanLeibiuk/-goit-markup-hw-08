@@ -11,15 +11,21 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: $primary-white-color;
-  // margin: 0;
-  // margin-bottom: 20px;
+  @media screen and (max-width: 1199.999px) {
+    text-align: center;
+  }
 }
 
 .social-footer__list {
-  @include centeredflex($type);
+  @media screen and (max-width: 1199.999px) {
+    @include centeredflex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .social-footer__link {
-  @include centeredflex($type);
+  @include centeredflex;
   width: 44px;
   height: 44px;
   fill: $primary-white-color;

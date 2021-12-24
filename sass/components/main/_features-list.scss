@@ -1,3 +1,8 @@
+.features {
+  @media screen and (max-width: 479.999px) {
+    @include centeredflex;
+  }
+}
 .features__list {
   @media screen and(min-width:768px) {
     display: flex;
@@ -12,7 +17,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-text-color;
-  @media screen and (max-width: 479.999px) {
+  @media screen and (max-width: 767.999px) {
     text-align: center;
   }
 }
@@ -24,9 +29,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 479.999px) {
-    width: 100%;
-  }
   @media screen and(min-width:768px) and (max-width: 1199.999px) {
     width: 354px;
   }
@@ -36,6 +38,9 @@
 }
 
 .features__item {
+  @media screen and (max-width: 767.999px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199.999px) {
     width: calc(100% - 4 * 15px) / 2;
     margin: 15px;
@@ -53,7 +58,7 @@
   border-radius: 4px;
 
   @media screen and (max-width: 767.999px) {
-    width: 450px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.999px) {
     width: 354px;

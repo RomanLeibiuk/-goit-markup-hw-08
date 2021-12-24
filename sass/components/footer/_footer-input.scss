@@ -8,11 +8,13 @@
     flex-direction: column;
   }
 }
-// .footer__form--position {
-//   margin-top: 20px;
-//   display: flex;
-//   flex-direction: row;
-// }
+.footer__form--position {
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
 .footer__label {
   font-weight: 700;
   font-size: 14px;
@@ -40,7 +42,7 @@
   @media screen and (max-width: 1199.999px) {
     width: 450px;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 12px;
     min-width: 358px;
   }

@@ -4,5 +4,7 @@ body {
   font-family: Roboto, sans-serif, Raleway, sans-serif;
   letter-spacing: 0.02em;
   margin: 0;
-  // padding-top: 80px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+  }
 }

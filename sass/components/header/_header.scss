@@ -1,13 +1,15 @@
-// .header {
-//   // position: fixed;
-//   // top: 0;
-//   // left: 0;
-//   // z-index: 99;
-//   // min-height: 60px;
-//   // width: 100%;
-//   background-color: $primary-white-color;
-//   border-bottom: 1px solid $border-header-color;
-// }
+.header {
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $border-header-color;
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    min-height: 60px;
+    width: 100%;
+  }
+}
 // .header__container {
 //   @media screen and (min-width: 768px) {
 //     display: flex;
