@@ -40,6 +40,9 @@
 .features__item {
   @media screen and (max-width: 767.999px) {
     width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199.999px) {
     width: calc(100% - 4 * 15px) / 2;

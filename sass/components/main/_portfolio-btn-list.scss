@@ -28,18 +28,25 @@
 .btn__list {
   display: flex;
   margin-bottom: 50px;
-  margin-top: -15px;
+
   @media screen and(max-width:767.999px) {
     flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
   }
   @media screen and (min-width: 768px) {
     @include centeredflex;
   }
 }
 .btn__item {
-  margin-right: 8px;
-  margin-top: 15px;
-}
-.btn__item:nth-last-child(-n + 1) {
-  margin-right: 0;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  @media screen and (max-width: 767.999px) {
+    margin-top: 15px;
+    margin-left: 8px;
+  }
 }

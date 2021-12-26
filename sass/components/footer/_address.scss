@@ -1,6 +1,8 @@
-.footer__container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer__container {
   @media screen and (max-width: 767.999px) {
     text-align: center;
   }
@@ -8,6 +10,7 @@
     @include centeredflex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -18,12 +21,7 @@
 }
 .address__container {
   @media screen and (min-width: 768px) and (max-width: 1199.999px) {
-    margin-right: 165px;
-    margin-left: 76px;
     margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 20px;
   }
 }
 .address__link {
