@@ -3,22 +3,46 @@
   background-color: $bg-one;
 }
 .hero {
-  // min-height: 600px;
-  // max-width: 1600px;
-  // margin-right: auto;
-  // margin-left: auto;
-
+  min-height: 400px;
+  padding: 118px 0px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/bg/bg-img-header.jpg');
+    url('../images/bg/mobile.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  // padding: 200px 0px;
-  @media screen and (max-width: 479.999px) {
-    min-height: 400px;
-    max-width: 480px;
-    padding: 118px 0px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg/mobile2x.jpg');
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg/tablet.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bg/tablet2x.jpg');
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bg/desktop.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bg/desktop.jpg');
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
   }
 }
 
@@ -26,8 +50,6 @@
   margin: 0 auto;
   margin-bottom: 30px;
   // width: 696px;
-  // margin: 0 auto;
-  //
 
   color: $primary-white-color;
   font-family: Roboto;
@@ -37,9 +59,14 @@
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199.999px) {
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

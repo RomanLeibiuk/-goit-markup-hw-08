@@ -6,14 +6,20 @@
   }
 }
 .crew__image {
-  @media screen and(max-width: 479.999px) {
-    width: 450px;
-    height: 450px;
-  }
-  @media screen and(min-width: 480px) and (max-width: 1199.999px) {
-    width: 354px;
-    height: 374px;
-  }
+  // margin: 0;
+  // @media screen and(max-width: 479.999px) {
+  //   width: 450px;
+  //   height: 460px;
+  // }
+  // @media screen and (max-width: 1199.999px) {
+  //   width: 354px;
+  //   height: 374px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  //   height: 260px;
+  // }
+  max-width: 100%;
 }
 .crew__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
